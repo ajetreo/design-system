@@ -19,5 +19,6 @@ export const parameters = {
     element: '#root',
     // sets the execution mode for the addon
     manual: false
-  }
+  },
+  layout: 'centered'
 }

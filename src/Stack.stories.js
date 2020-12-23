@@ -1,19 +1,20 @@
-import React from 'react';
-import styled from 'styled-components';
-import { styles } from '@storybook/design-system';
-const { color } = styles;
-import { Stack } from './Stack';
+import React from 'react'
+import styled from 'styled-components'
+import { styles } from '@storybook/design-system'
+import { Stack } from './Stack'
+
+const { color } = styles
 
 export default {
   component: Stack,
-  title: 'Components/Stack',
-};
+  title: 'Components/Stack'
+}
 
 const Box = styled.div`
   width: 32px;
   height: 32px;
   background-color: ${color.darkest};
-`;
+`
 
 export const Horizontal = () => (
   <Stack style={{ backgroundColor: color.mediumlight }}>
@@ -22,54 +23,54 @@ export const Horizontal = () => (
     <Box />
     <Box />
   </Stack>
-);
+)
 
 export const Vertical = () => (
-  <Stack axis="vertical" style={{ backgroundColor: color.mediumlight }}>
+  <Stack axis='vertical' style={{ backgroundColor: color.mediumlight }}>
     <Box />
     <Box />
     <Box />
     <Box />
   </Stack>
-);
+)
 
 export const ControlSpacing = () => (
-  <Stack space="large" style={{ backgroundColor: color.mediumlight }}>
+  <Stack space='large' style={{ backgroundColor: color.mediumlight }}>
     <Box />
     <Box />
     <Box />
     <Box />
   </Stack>
-);
+)
 
 export const ControlDistribution = () => (
-  <Stack axis="vertical">
-    <Stack style={{ backgroundColor: color.mediumlight }} distribution="start">
+  <Stack axis='vertical'>
+    <Stack style={{ backgroundColor: color.mediumlight }} distribution='start'>
       <Box />
       <Box />
       <Box />
       <Box />
     </Stack>
-    <Stack style={{ backgroundColor: color.mediumlight }} distribution="center">
+    <Stack style={{ backgroundColor: color.mediumlight }} distribution='center'>
       <Box />
       <Box />
       <Box />
       <Box />
     </Stack>
-    <Stack style={{ backgroundColor: color.mediumlight }} distribution="end">
+    <Stack style={{ backgroundColor: color.mediumlight }} distribution='end'>
       <Box />
       <Box />
       <Box />
       <Box />
     </Stack>
   </Stack>
-);
+)
 
 export const ControlAlignment = () => (
-  <Stack axis="vertical">
+  <Stack axis='vertical'>
     <Stack
       style={{ backgroundColor: color.mediumlight, height: 96 }}
-      alignment="start"
+      alignment='start'
     >
       <Box />
       <Box />
@@ -78,7 +79,7 @@ export const ControlAlignment = () => (
     </Stack>
     <Stack
       style={{ backgroundColor: color.mediumlight, height: 96 }}
-      alignment="center"
+      alignment='center'
     >
       <Box />
       <Box />
@@ -87,7 +88,7 @@ export const ControlAlignment = () => (
     </Stack>
     <Stack
       style={{ backgroundColor: color.mediumlight, height: 96 }}
-      alignment="end"
+      alignment='end'
     >
       <Box />
       <Box />
@@ -95,4 +96,4 @@ export const ControlAlignment = () => (
       <Box />
     </Stack>
   </Stack>
-);
+)

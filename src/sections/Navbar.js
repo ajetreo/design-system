@@ -8,8 +8,8 @@ import {
   TooltipLinkList,
   WithTooltip
 } from '@storybook/design-system'
-import { Stack } from './Stack'
-import { margin } from './shared/styles'
+import { Stack } from '../Stack'
+import { margin } from '../shared/styles'
 
 const { color, typography, breakpoint } = styles
 

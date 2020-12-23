@@ -1,4 +1,5 @@
 import { css } from 'styled-components'
+import { rgba } from 'polished'
 
 // Global style variables
 export const background = {
@@ -53,6 +54,17 @@ export const spacing = {
   }
 }
 
+export const measure = { regular: 600, wide: 760, xwide: 980 }
+
+export const margin = {
+  xxsmall: 10,
+  xsmall: 20,
+  small: 40,
+  medium: 64,
+  large: 80,
+  xlarge: 120
+}
+
 export const typography = {
   type: {
     primary: '"Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -98,13 +110,32 @@ export const pageMargins = css`
   }
 `
 
-export const measure = { regular: 600, wide: 760, xwide: 980 }
+export const sectionPadding = css`
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 
-export const margin = {
-  xxsmall: 10,
-  xsmall: 20,
-  small: 40,
-  medium: 64,
-  large: 80,
-  xlarge: 120
-}
+  @media (min-width: ${breakpoint}px) {
+    padding-top: ${margin.large}px;
+    padding-bottom: ${margin.large}px;
+  }
+`
+
+export const hoverEffect = css`
+  border: 1px solid ${color.border};
+  border-radius: ${spacing.borderRadius.small}px;
+  transition: background 150ms ease-out, border 150ms ease-out,
+    transform 150ms ease-out;
+
+  &:hover,
+  &.__hover {
+    border-color: ${rgba(color.secondary, 0.5)};
+    transform: translate3d(0, -3px, 0);
+    box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
+  }
+
+  &:active,
+  &.__active {
+    border-color: ${rgba(color.secondary, 1)};
+    transform: translate3d(0, 0, 0);
+  }
+`

@@ -1,11 +1,11 @@
 import React from 'react'
 
 import { Navbar } from './Navbar'
-import { Backdrop } from './Backdrop'
+import { Backdrop } from '../Backdrop'
 
 export default {
   component: Navbar,
-  title: 'Components/Navbar'
+  title: 'Sections/Navbar'
 }
 
 export const Default = () => (

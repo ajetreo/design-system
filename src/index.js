@@ -5,6 +5,8 @@ import * as icons from './shared/icons'
 
 export { styles, global, animation, icons }
 
+export * from './sections/Footer'
+
 export * from './Avatar'
 export * from './Badge'
 export * from './Button'
@@ -15,6 +17,7 @@ export * from './Text'
 export * from './Backdrop'
 export * from './BoxLink'
 export * from './Callout'
+export * from './Cardinal'
 export * from './Card'
 export * from './CheckList'
 export * from './Divider'
@@ -22,7 +25,8 @@ export * from './ExplainerCard'
 export * from './Heading'
 export * from './LogoGrid'
 export * from './Measure'
-export * from './Navbar'
+export * from './sections/Navbar'
+export * from './ProgressDots'
 export * from './Stack'
 export * from './SubHeading'
 
