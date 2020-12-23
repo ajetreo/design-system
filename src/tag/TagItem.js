@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { color, typography, background, spacing } from '../shared/styles'
+import { color, typography, spacing } from '../shared/styles'
 import { inlineGlow } from '../shared/animation'
 
 function randomString (min, max) {
@@ -14,13 +14,14 @@ export const TagItem = styled.div.attrs(({ isLoading, children }) => ({
   ...(isLoading && { 'aria-label': 'Loading tag' })
 }))`
   display: inline-block;
-  background: ${background.app};
+  background: ${color.secondary};
   border-radius: ${spacing.borderRadius.small}px;
   padding: 6px 10px 4px 10px;
   font-size: ${typography.size.s2}px;
+  font-weight: ${typography.weight.extrabold};
   line-height: ${typography.size.m1}px;
   position: relative;
-  color: ${color.darkest};
+  color: ${color.lightest};
   border-width: 1px;
   border-style: solid;
   border-color: transparent;

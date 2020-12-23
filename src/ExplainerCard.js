@@ -6,7 +6,7 @@ import { Stack } from './Stack'
 import { Text } from './Text'
 import { margin } from './shared/styles'
 import { Measure } from './Measure'
-import ArrowSvg from './public/images/arrow.svg'
+// import ArrowSvg from './images/arrow.svg'
 
 const { breakpoint, typography } = styles
 
@@ -69,6 +69,7 @@ const ExplainerCardContainer = styled(Measure)`
   }
 `
 
+/*
 const Arrow = styled(ArrowSvg)`
   position: absolute;
   bottom: -50%;
@@ -80,6 +81,7 @@ const Arrow = styled(ArrowSvg)`
     display: block;
   }
 `
+*/
 
 export const ExplainerCard = ({
   illustration,
@@ -91,7 +93,7 @@ export const ExplainerCard = ({
   <ExplainerCardContainer variant='wide'>
     <Illustration>
       {illustration}
-      {!hideArrow && <Arrow />}
+      {/* !hideArrow && <Arrow /> */}
     </Illustration>
     <DescriptionContainer>
       <Heading as='h3' level='4'>
@@ -108,5 +110,5 @@ export const ExplainerCard = ({
 )
 
 ExplainerCard.defaultProps = {
-  hideArrow: false
+  hideArrow: true
 }

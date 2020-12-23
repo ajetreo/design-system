@@ -1,18 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
-import { color, typography } from '../shared/styles';
-import { inlineGlow } from '../shared/animation';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled, { css } from 'styled-components'
+import { color, typography } from '../shared/styles'
+import { inlineGlow } from '../shared/animation'
 
-const Left = styled.span``;
+const Left = styled.span``
 const Title = styled.span`
   font-weight: ${typography.weight.bold};
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-`;
-const Center = styled.span``;
-const Right = styled.span``;
+`
+const Center = styled.span``
+const Right = styled.span``
 
 const ItemWrapper = styled.li`
   list-style: none;
@@ -20,7 +20,7 @@ const ItemWrapper = styled.li`
   &:not(:first-child) {
     border-top: 1px solid ${color.mediumlight};
   }
-`;
+`
 
 const ItemInner = styled.span`
   /* Layout */
@@ -58,7 +58,7 @@ const ItemInner = styled.span`
     text-align: right;
     margin-left: 10px;
   }
-`;
+`
 
 const linkStyles = css`
   font-size: ${typography.size.s1}px;
@@ -94,7 +94,7 @@ const linkStyles = css`
     }
   }
 
-  ${(props) =>
+  ${props =>
     props.active &&
     css`
       ${Title} {
@@ -112,7 +112,7 @@ const linkStyles = css`
       }
     `};
 
-  ${(props) =>
+  ${props =>
     props.isLoading &&
     css`
       ${Title} {
@@ -122,7 +122,7 @@ const linkStyles = css`
       }
     `};
 
-  ${(props) =>
+  ${props =>
     props.disabled &&
     css`
       cursor: not-allowed !important;
@@ -130,22 +130,24 @@ const linkStyles = css`
         color: ${color.mediumdark};
       }
     `};
-`;
+`
 
 // eslint-disable-next-line jsx-a11y/anchor-has-content
-const Item = styled(({ active, activeColor, isLoading, ...rest }) => <a {...rest} />)`
-  ${linkStyles}
-`;
-
-const buildStyledLinkWrapper = (
-  LinkWrapper
-) => styled(({ active, isLoading, activeColor, ...linkWrapperRest }) => (
-  <LinkWrapper {...linkWrapperRest} />
+const Item = styled(({ active, activeColor, isLoading, ...rest }) => (
+  <a {...rest} />
 ))`
   ${linkStyles}
-`;
+`
 
-export function ListItem({
+const buildStyledLinkWrapper = LinkWrapper => styled(
+  ({ active, isLoading, activeColor, ...linkWrapperRest }) => (
+    <LinkWrapper {...linkWrapperRest} />
+  )
+)`
+  ${linkStyles}
+`
+
+export function ListItem ({
   appearance,
   left,
   title,
@@ -155,18 +157,18 @@ export function ListItem({
   LinkWrapper,
   ...rest
 }) {
-  const listItemActiveColor = color[appearance];
+  const listItemActiveColor = color[appearance]
   const linkInner = (
-    <ItemInner onClick={onClick} role="presentation">
+    <ItemInner onClick={onClick} role='presentation'>
       {left && <Left>{left}</Left>}
       {title && <Title>{title}</Title>}
       {center && <Center>{center}</Center>}
       {right && <Right>{right}</Right>}
     </ItemInner>
-  );
+  )
 
   if (LinkWrapper) {
-    const StyledLinkWrapper = buildStyledLinkWrapper(LinkWrapper);
+    const StyledLinkWrapper = buildStyledLinkWrapper(LinkWrapper)
 
     return (
       <ItemWrapper>
@@ -174,7 +176,7 @@ export function ListItem({
           {linkInner}
         </StyledLinkWrapper>
       </ItemWrapper>
-    );
+    )
   }
 
   return (
@@ -183,7 +185,7 @@ export function ListItem({
         {linkInner}
       </Item>
     </ItemWrapper>
-  );
+  )
 }
 
 ListItem.propTypes = {
@@ -196,8 +198,8 @@ ListItem.propTypes = {
   active: PropTypes.bool,
   disabled: PropTypes.bool,
   LinkWrapper: PropTypes.func,
-  onClick: PropTypes.func,
-};
+  onClick: PropTypes.func
+}
 
 ListItem.defaultProps = {
   appearance: 'primary',
@@ -209,5 +211,5 @@ ListItem.defaultProps = {
   active: false,
   disabled: false,
   LinkWrapper: undefined,
-  onClick: undefined,
-};
+  onClick: undefined
+}

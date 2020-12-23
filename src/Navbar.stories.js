@@ -12,10 +12,10 @@ export const Default = () => (
   <Backdrop style={{ padding: 64 }}>
     <Navbar
       links={[
-        { href: '#why', title: 'Why' },
-        { href: '#how', title: 'How' },
-        { href: '#benefits', title: 'Benefits' },
-        { href: '#tools', title: 'Tools' }
+        { href: '#intro', title: 'Intro' },
+        { href: '#team', title: 'Team' },
+        { href: '#about', title: 'About' },
+        { href: '#contact', title: 'Contact' }
       ]}
       githubLink={{
         namespace: 'ajetreo',

@@ -9,5 +9,5 @@ export default {
   title: 'Tag/TagItem'
 }
 
-export const Default = () => <TagItem>⚛️ React</TagItem>
+export const Default = () => <TagItem>MustRead</TagItem>
 export const Loading = () => <TagItem isLoading />
