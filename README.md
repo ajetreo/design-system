@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/ajetreo">
-    <img src="./src/images/logo-full.svg" alt="A Design System of polished React components that work out of the box.">
+    <img src="./src/public/images/logo-full.svg" alt="A Design System of polished React components that work out of the box.">
 	<br>
   <br>
 </div>
