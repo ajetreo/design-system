@@ -1,5 +1,5 @@
 import React from 'react'
-import { boolean, number, text } from '@storybook/addon-knobs'
+import { text } from '@storybook/addon-knobs'
 
 import { Text } from './Text'
 
@@ -20,7 +20,7 @@ export const defaultStory = () => (
 defaultStory.story = {
   name: 'Default'
 }
-
+/*
 export const size100 = () => (
   <Text fontSize={number('fontSize', 100)}>
     {text(
@@ -264,3 +264,4 @@ export const truncated = () => (
 truncated.story = {
   name: 'Truncated'
 }
+*/
