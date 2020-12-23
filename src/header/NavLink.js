@@ -1,6 +1,5 @@
 import React, { forwardRef, useContext } from 'react'
 import styled from 'styled-components'
-// @ts-ignore
 import { Link } from '../Link'
 import { typography } from '../shared/styles'
 import { HeaderContext } from './HeaderContext'

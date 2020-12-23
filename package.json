@@ -6,6 +6,7 @@
   "main": "dist/index.js",
   "license": "MIT",
   "dependencies": {
+    "@storybook/design-system": "5.4.4",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -20,9 +21,9 @@
   "scripts": {
     "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
-    "build-storybook-docs": "build-storybook -s public --docs",
+    "storybook": "start-storybook -p 6006 -s ./src/public",
+    "build-storybook": "build-storybook -s ./src/public",
+    "build-storybook-docs": "build-storybook -s ./src/public --docs",
     "release": "auto shipit"
   },
   "eslintConfig": {

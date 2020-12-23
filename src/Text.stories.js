@@ -4,12 +4,17 @@ import { boolean, number, text } from '@storybook/addon-knobs'
 import { Text } from './Text'
 
 export default {
-  title: 'Design System/Text',
+  title: 'Components/Typography/Text',
   component: Text
 }
 
 export const defaultStory = () => (
-  <Text>{text('children', 'Some default content here.')}</Text>
+  <Text>
+    {text(
+      'children',
+      'Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.'
+    )}
+  </Text>
 )
 
 defaultStory.story = {
@@ -18,7 +23,10 @@ defaultStory.story = {
 
 export const size100 = () => (
   <Text fontSize={number('fontSize', 100)}>
-    {text('children', 'Some default content here.')}
+    {text(
+      'children',
+      'Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.'
+    )}
   </Text>
 )
 
@@ -28,7 +36,10 @@ size100.story = {
 
 export const size200 = () => (
   <Text fontSize={number('fontSize', 200)}>
-    {text('children', 'Some default content here.')}
+    {text(
+      'children',
+      'Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.'
+    )}
   </Text>
 )
 
@@ -38,7 +49,10 @@ size200.story = {
 
 export const size300 = () => (
   <Text fontSize={number('fontSize', 300)}>
-    {text('children', 'Some default content here.')}
+    {text(
+      'children',
+      'Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.'
+    )}
   </Text>
 )
 
@@ -48,7 +62,10 @@ size300.story = {
 
 export const size400 = () => (
   <Text fontSize={number('fontSize', 400)}>
-    {text('children', 'Some default content here.')}
+    {text(
+      'children',
+      'Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.'
+    )}
   </Text>
 )
 
@@ -58,7 +75,10 @@ size400.story = {
 
 export const size500 = () => (
   <Text fontSize={number('fontSize', 500)}>
-    {text('children', 'Some default content here.')}
+    {text(
+      'children',
+      'Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.'
+    )}
   </Text>
 )
 
@@ -68,7 +88,10 @@ size500.story = {
 
 export const size600 = () => (
   <Text fontSize={number('fontSize', 600)}>
-    {text('children', 'Some default content here.')}
+    {text(
+      'children',
+      'Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.'
+    )}
   </Text>
 )
 
@@ -78,7 +101,10 @@ size600.story = {
 
 export const size700 = () => (
   <Text fontSize={number('fontSize', 700)}>
-    {text('children', 'Some default content here.')}
+    {text(
+      'children',
+      'Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.'
+    )}
   </Text>
 )
 
@@ -88,7 +114,10 @@ size700.story = {
 
 export const size800 = () => (
   <Text fontSize={number('fontSize', 800)}>
-    {text('children', 'Some default content here.')}
+    {text(
+      'children',
+      'Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.'
+    )}
   </Text>
 )
 
@@ -98,7 +127,10 @@ size800.story = {
 
 export const size900 = () => (
   <Text fontSize={number('fontSize', 900)}>
-    {text('children', 'Some default content here.')}
+    {text(
+      'children',
+      'Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.'
+    )}
   </Text>
 )
 
@@ -108,7 +140,10 @@ size900.story = {
 
 export const size1000 = () => (
   <Text fontSize={number('fontSize', 1000)}>
-    {text('children', 'Some default content here.')}
+    {text(
+      'children',
+      'Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.'
+    )}
   </Text>
 )
 
@@ -118,7 +153,10 @@ size1000.story = {
 
 export const bold = () => (
   <Text fontWeight={text('fontWeight', 'bold')}>
-    {text('children', 'Some default content here.')}
+    {text(
+      'children',
+      'Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.'
+    )}
   </Text>
 )
 
@@ -128,7 +166,10 @@ bold.story = {
 
 export const italicized = () => (
   <Text isItalicized={boolean('isItalicized', true)}>
-    {text('children', 'Some default content here.')}
+    {text(
+      'children',
+      'Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.'
+    )}
   </Text>
 )
 
@@ -138,7 +179,10 @@ italicized.story = {
 
 export const h1Tag = () => (
   <Text as={text('as', 'h1')}>
-    {text('children', 'Some default content here.')}
+    {text(
+      'children',
+      'Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.'
+    )}
   </Text>
 )
 
@@ -148,7 +192,10 @@ h1Tag.story = {
 
 export const h2Tag = () => (
   <Text as={text('as', 'h2')}>
-    {text('children', 'Some default content here.')}
+    {text(
+      'children',
+      'Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.'
+    )}
   </Text>
 )
 
@@ -158,7 +205,10 @@ h2Tag.story = {
 
 export const pTag = () => (
   <Text as={text('as', 'p')}>
-    {text('children', 'Some default content here.')}
+    {text(
+      'children',
+      'Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.'
+    )}
   </Text>
 )
 
@@ -168,7 +218,10 @@ pTag.story = {
 
 export const spanTag = () => (
   <Text as={text('as', 'span')}>
-    {text('children', 'Some default content here.')}
+    {text(
+      'children',
+      'Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.'
+    )}
   </Text>
 )
 

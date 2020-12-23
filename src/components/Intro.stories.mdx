@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/addon-docs/blocks'
-import designSystem from '../images/logo-full.svg'
+import designSystem from '../public/images/logo-full.svg'
 
 <Meta title='Ajetreo/Introduction' />
 
@@ -14,6 +14,11 @@ Ajetreo is the design system powering all frontend projects under the [Ajetreo](
 
 Ajetreo Design System (ADS) is a reusable component library that helps Storybook contributors build UIs faster. The goal is
 to make building durable UIs more productive and satisfying.
+
+ADS uses [Storybook](https://storybook.js.org) as a local development environment, and for running tests against components.
+Every component has a `.stories.js` file where developers can write "stories" to test components in isolation. Running
+`yarn storybook` will open the ADS Storybook in your browser so that you can see changes live as you make them.
+[You can read more about writing stories on the Storybook website](https://storybook.js.org/docs/basics/writing-stories/).
 
 ## Install
 
