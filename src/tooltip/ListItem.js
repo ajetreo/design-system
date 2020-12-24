@@ -132,12 +132,13 @@ const linkStyles = css`
     `};
 `
 
-// eslint-disable-next-line jsx-a11y/anchor-has-content
+/* eslint-disable jsx-a11y/anchor-has-content */
 const Item = styled(({ active, activeColor, isLoading, ...rest }) => (
   <a {...rest} />
 ))`
   ${linkStyles}
 `
+/* eslint-enable jsx-a11y/anchor-has-content */
 
 const buildStyledLinkWrapper = LinkWrapper => styled(
   ({ active, isLoading, activeColor, ...linkWrapperRest }) => (

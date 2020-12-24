@@ -17,7 +17,7 @@ export const TagItem = styled.div.attrs(({ isLoading, children }) => ({
   background: ${color.secondary};
   border-radius: ${spacing.borderRadius.small}px;
   padding: 6px 10px 4px 10px;
-  font-size: ${typography.size.s2}px;
+  font-size: ${typography.size.s3}px;
   font-weight: ${typography.weight.extrabold};
   line-height: ${typography.size.m1}px;
   position: relative;

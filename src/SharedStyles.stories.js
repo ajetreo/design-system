@@ -1,14 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
 import { pageMargins, hoverEffect } from './shared/styles'
+
 export default {
-  title: 'SharedStyles'
+  title: 'Ajetreo/SharedStyles'
 }
+
 const BlockWithMargin = styled.div`
   ${pageMargins};
   height: 300px;
   background-color: #333;
 `
+
 export const PageMargins = () => (
   <div>
     <p>
@@ -18,6 +21,7 @@ export const PageMargins = () => (
     <BlockWithMargin />
   </div>
 )
+
 const BlockWithHoverEffect = styled.div`
   ${hoverEffect};
   display: block;

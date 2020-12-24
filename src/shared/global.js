@@ -3,7 +3,7 @@ import { color, typography } from './styles'
 
 export const bodyStyles = css`
   font-family: ${typography.type.primary};
-  font-size: ${typography.size.s3}px;
+  font-size: ${typography.size.m1}px;
   color: ${color.darkest};
 
   -webkit-font-smoothing: antialiased;
@@ -116,10 +116,12 @@ export const bodyStyles = css`
 export const fontUrl =
   'https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,800,900'
 
+/**
+ * html {
+ *   scroll-behavior: smooth;
+ * }
+ */
 export const GlobalStyle = createGlobalStyle`
-  html {
-    scroll-behavior: smooth;
-  }
   body {
     ${bodyStyles}
   }

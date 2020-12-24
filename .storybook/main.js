@@ -10,6 +10,6 @@ module.exports = {
     '@storybook/preset-create-react-app',
     '@storybook/addon-a11y',
     '@storybook/addon-knobs',
-    '@storybook/addon-storysource'
+    //'@storybook/addon-storysource'
   ]
 }
