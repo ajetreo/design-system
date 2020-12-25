@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Icon } from '@storybook/design-system'
+import { Icon } from './Icon'
 import { Text } from './Text'
 
 import { color } from './shared/styles'

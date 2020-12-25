@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import { styles } from '@storybook/design-system'
-
-const { color, typography } = styles
+import { color, typography } from './shared/styles'
 
 export const Text = styled.p`
   letter-spacing: -0.33px;

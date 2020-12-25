@@ -1,14 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Badge, styles } from '@storybook/design-system'
+import { breakpoint, typography } from './shared/styles'
+import { Badge } from './Badge'
 import { Heading } from './Heading'
 import { Stack } from './Stack'
 import { Text } from './Text'
 import { margin } from './shared/styles'
 import { Measure } from './Measure'
 // import ArrowSvg from './images/arrow.svg'
-
-const { breakpoint, typography } = styles
 
 const ComponentBadge = styled(Badge)`
   background-color: rgba(0, 0, 0, 0.2);

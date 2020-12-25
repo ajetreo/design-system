@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-//import { styles } from '@storybook/design-system'
+//import { styles } from '../shared/styles'
 import { Navbar } from '../sections/Navbar'
 import { Backdrop } from '../Backdrop'
 import { Heading } from '../Heading'

@@ -1,9 +1,6 @@
 import styled from 'styled-components'
-import { styles } from '@storybook/design-system'
 import { Text } from './Text'
-import { margin } from './shared/styles'
-
-const { background, spacing, breakpoint } = styles
+import { background, spacing, breakpoint, margin } from './shared/styles'
 
 export const Callout = styled(Text)`
   background-color: ${background.app};

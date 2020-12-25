@@ -1,9 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { styles } from '@storybook/design-system'
+import { color } from './shared/styles'
 import { Stack } from './Stack'
-
-const { color } = styles
 
 export default {
   component: Stack,

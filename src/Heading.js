@@ -1,7 +1,5 @@
 import styled, { css } from 'styled-components'
-import { styles } from '@storybook/design-system'
-
-const { color, typography, breakpoint } = styles
+import { color, typography, breakpoint } from './shared/styles'
 
 export const Heading = styled.h1`
   color: ${color.darkest};
