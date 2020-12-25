@@ -2,6 +2,7 @@ import React from 'react'
 import seedrandom from 'seedrandom'
 import { TagLink } from './TagLink'
 import { StoryLinkWrapper } from '../StoryLinkWrapper'
+import { Emoji } from '../Emoji'
 
 seedrandom('chromatic testing', { global: true })
 
@@ -11,12 +12,14 @@ export default {
 }
 
 export const Default = () => (
-  <TagLink href='https://chromatic.com'>⚛️ React</TagLink>
+  <TagLink href='https://chromatic.com'>
+    <Emoji symbol='⚛️' label='React' /> React
+  </TagLink>
 )
 
 export const WithLinkWrapper = () => (
   <TagLink to='https://chromatic.com' LinkWrapper={StoryLinkWrapper}>
-    ⚛️ React
+    <Emoji symbol='⚛️' label='React' /> React
   </TagLink>
 )
 

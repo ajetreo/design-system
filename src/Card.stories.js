@@ -10,7 +10,7 @@ export default {
 export const Default = () => (
   <Card style={{ margin: '2rem' }}>
     <CardMedia style={{ backgroundColor: '#66BF3C' }}>
-      <img src='/images/logo-full.svg' style={{ padding: 64 }} />
+      <img src='/images/logo-full.svg' style={{ padding: 64 }} alt='Logo' />
     </CardMedia>
     <CardBody>
       <Text style={{ padding: 64 }}>

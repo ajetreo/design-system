@@ -1,9 +1,12 @@
 import { createGlobalStyle, css } from 'styled-components'
 import { color, typography } from './styles'
 
+// Import normalize.css/reset.css?
+// Possibble perf enhancement for box-sizing rule specificity.
+// See: https://github.com/prisma/prisma-examples/blob/latest/javascript/rest-nextjs/components/Layout.jsx
 export const bodyStyles = css`
   font-family: ${typography.type.primary};
-  font-size: ${typography.size.m1}px;
+  font-size: ${typography.size.s3}px;
   color: ${color.darkest};
 
   -webkit-font-smoothing: antialiased;
@@ -114,7 +117,7 @@ export const bodyStyles = css`
 // Allow design system consumers to access font settings but control how and
 // where they load the font.
 export const fontUrl =
-  'https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,800,900'
+  'https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,800,900&display=swap'
 
 /**
  * html {
