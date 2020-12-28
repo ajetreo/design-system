@@ -2,12 +2,15 @@
 
 #### 🐛 Bug Fix
 
-- feat(themes): add multi theme support [#1](https://github.com/ajetreo/design-system/pull/1) ([@matthewhudson](https://github.com/matthewhudson))
+- feat(themes): add multi theme support [#1](https://github.com/ajetreo/design-system/pull/1)
+  ([@matthewhudson](https://github.com/matthewhudson))
 
 #### ⚠️ Pushed to `master`
 
-- feat: add components for ProgressDot(s), Cardinals and Footer. organize major layout components in 'Sections' ([@matthewhudson](https://github.com/matthewhudson))
-- fix(Text): replace w/ a much simpler implementation from componentdriven.org ([@matthewhudson](https://github.com/matthewhudson))
+- feat: add components for ProgressDot(s), Cardinals and Footer. organize major layout components in 'Sections'
+  ([@matthewhudson](https://github.com/matthewhudson))
+- fix(Text): replace w/ a much simpler implementation from componentdriven.org
+  ([@matthewhudson](https://github.com/matthewhudson))
 - feat(components): reorganize storybook sidebar hierarchy ([@matthewhudson](https://github.com/matthewhudson))
 - fix: update logo image path ([@matthewhudson](https://github.com/matthewhudson))
 - refactor(assets): add assets directory to serve images publicly ([@matthewhudson](https://github.com/matthewhudson))
