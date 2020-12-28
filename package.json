@@ -1,8 +1,9 @@
 {
   "name": "@ajetreo/design-system",
   "version": "0.1.1",
-  "private": true,
+  "private": false,
   "description": "The Design System for all @ajetreo frontend projects.",
+  "repository": "https://github.com/ajetreo/design-system.git",
   "main": "dist/index.js",
   "license": "MIT",
   "dependencies": {
@@ -24,7 +25,7 @@
     "storybook": "start-storybook -p 6006 -s ./src/public",
     "build-storybook": "build-storybook -s ./src/public",
     "build-storybook-docs": "build-storybook -s ./src/public --docs",
-    "release": "auto shipit",
+    "release": "auto shipit --base-branch=main",
     "chromatic": "npx chromatic --project-token v5j72zy1jjg"
   },
   "eslintConfig": {
@@ -72,5 +73,6 @@
     "react-is": "^16.13.1",
     "react-modal": "3.12.1",
     "seedrandom": "3.0.5"
-  }
+  },
+  "author": "matthewhudson <matthud@gmail.com>"
 }
