@@ -1,3 +1,15 @@
+# v0.1.2 (Mon Dec 28 2020)
+
+#### ⚠️ Pushed to `main`
+
+- fix(ci): update push action and yarn release setup ([@matthewhudson](https://github.com/matthewhudson))
+
+#### Authors: 1
+
+- Matthew Hudson ([@matthewhudson](https://github.com/matthewhudson))
+
+---
+
 # v0.1.1 (Mon Dec 28 2020)
 
 #### 🐛 Bug Fix
