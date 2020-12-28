@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { styles, Link } from '@storybook/design-system'
+import { typography } from '../shared/styles'
 import { Text } from '../Text'
+import { Link } from '../Link'
 
 const FooterContainer = styled(Text).attrs({ as: 'footer' })`
   color: #586368;
@@ -11,7 +12,7 @@ const FooterContainer = styled(Text).attrs({ as: 'footer' })`
 
 const FooterLink = styled(Link).attrs({ tertiary: true })`
   color: #586368;
-  font-weight: ${styles.typography.weight.bold};
+  font-weight: ${typography.weight.bold};
 `
 
 export const Footer = () => (

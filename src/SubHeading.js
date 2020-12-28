@@ -1,7 +1,5 @@
-import styled from 'styled-components';
-import { styles } from '@storybook/design-system';
-
-const { color, typography } = styles;
+import styled from 'styled-components'
+import { color, typography } from './shared/styles'
 
 export const SubHeading = styled.h3`
   letter-spacing: 5.57px;
@@ -10,4 +8,4 @@ export const SubHeading = styled.h3`
   font-size: ${typography.size.s2}px;
   line-height: 22px;
   color: ${color.darkest};
-`;
+`

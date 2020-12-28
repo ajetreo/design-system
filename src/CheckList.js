@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Icon, styles } from '@storybook/design-system'
+import { Icon } from './Icon'
 import { Text } from './Text'
 
-const { color } = styles
+import { color } from './shared/styles'
 
 export const CheckList = styled.ul`
   padding-left: 0;

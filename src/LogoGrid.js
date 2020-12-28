@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { styles } from '@storybook/design-system'
-import { margin } from './shared/styles'
+import { margin, breakpoint } from './shared/styles'
 import { BoxLink } from './BoxLink'
 
 const LogoGridContainer = styled.div`
@@ -11,7 +10,7 @@ const LogoGridContainer = styled.div`
   grid-auto-rows: auto;
   grid-auto-flow: dense;
 
-  @media (min-width: ${styles.breakpoint * 2}px) {
+  @media (min-width: ${breakpoint * 2}px) {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   }
 `

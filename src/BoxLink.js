@@ -1,8 +1,7 @@
 import styled from 'styled-components'
-import { Link, styles } from '@storybook/design-system'
+import { Link } from './Link'
+import { color, spacing } from './shared/styles'
 import { rgba } from 'polished'
-
-const { color, spacing } = styles
 
 export const BoxLink = styled(Link)`
   display: block;

@@ -1,12 +1,10 @@
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import { styles } from '@storybook/design-system'
-
-const { color, typography } = styles
+import { color, typography } from './shared/styles'
 
 export const Text = styled.p`
   letter-spacing: -0.33px;
-  font-size: ${typography.size.s3}px;
+  font-size: ${typography.size.m1}px;
   line-height: ${typography.size.m3}px;
   color: ${color.darkest};
   margin-top: 0;

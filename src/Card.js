@@ -1,7 +1,5 @@
 import styled from 'styled-components'
-import { styles } from '@storybook/design-system'
-
-const { spacing, color, breakpoint } = styles
+import { spacing, color, breakpoint } from './shared/styles'
 
 export const Card = styled.div`
   display: flex;

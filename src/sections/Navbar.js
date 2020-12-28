@@ -1,17 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import GitHubButton from 'react-github-button'
-import {
-  styles,
-  Link,
-  Icon,
-  TooltipLinkList,
-  WithTooltip
-} from '@storybook/design-system'
-import { Stack } from '../Stack'
-import { margin } from '../shared/styles'
 
-const { color, typography, breakpoint } = styles
+import { Stack } from '../Stack'
+import { Link } from '../Link'
+import { Icon } from '../Icon'
+import { TooltipLinkList } from '../tooltip/TooltipLinkList'
+import WithTooltip from '../tooltip/WithTooltip'
+import { margin, color, typography, breakpoint } from '../shared/styles'
 
 const LogoLink = styled(Link)`
   display: block;
