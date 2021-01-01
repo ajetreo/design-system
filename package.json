@@ -1,6 +1,6 @@
 {
   "name": "@ajetreo/design-system",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "description": "The Design System for all @ajetreo frontend projects.",
   "repository": "https://github.com/ajetreo/design-system.git",
