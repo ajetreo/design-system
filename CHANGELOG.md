@@ -1,3 +1,15 @@
+# v0.1.3 (Fri Jan 01 2021)
+
+#### ⚠️ Pushed to `main`
+
+- chore(dependabot): add dependabot config file ([@matthewhudson](https://github.com/matthewhudson))
+
+#### Authors: 1
+
+- Matthew Hudson ([@matthewhudson](https://github.com/matthewhudson))
+
+---
+
 # v0.1.2 (Mon Dec 28 2020)
 
 #### ⚠️ Pushed to `main`
