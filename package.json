@@ -65,7 +65,7 @@
     "@storybook/node-logger": "^6.1.11",
     "@storybook/preset-create-react-app": "^3.1.5",
     "@storybook/react": "^6.1.11",
-    "auto": "^9.53.1",
+    "auto": "^10.18.4",
     "babel-loader": "^8.1.0",
     "chromatic": "^5.2.0",
     "cross-env": "^7.0.2",
